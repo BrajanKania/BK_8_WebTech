@@ -1,7 +1,7 @@
 function Student(){
     return (
         <div>
-            <p>Imię i nazwisko: Brajan Kania</p>
+            <h4>Brajan Kania</h4>
             <p>Klasa: 4P</p>
             <p>Specjalizacja: C++</p>
         </div>
