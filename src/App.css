@@ -21,3 +21,9 @@
   width: 40%;
   margin: 4px auto;
 }
+
+.book{
+  width: 30%;
+  margin: 4px auto;
+  border: violet solid 3px;
+}

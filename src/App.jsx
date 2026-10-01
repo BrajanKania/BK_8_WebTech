@@ -14,6 +14,7 @@ import Navigation from "./components/Navigation"
 
 import StudentCard from "./components/StudentCard"
 import CourseCard from './components/CourseCard'
+import Book from './components/Book'
 
 function App() {
   const technologies = [
@@ -44,6 +45,12 @@ function App() {
     { id: 4, name: "Józef", className: "4P", age: 14, specialization: "HTML"  }
   ];
 
+  const books = [
+    { id: 1, title: "Wiedźmin", author: "Andrzej Sapkowski" },
+    { id: 2, title: "Hobbit", author: "J.R.R. Tolkien" },
+    { id: 3, title: "Lalka", author: "Bolesław Prus" }
+  ];
+
   return (
     <>
       <Header />
@@ -51,6 +58,17 @@ function App() {
         <Navigation />
 
         <main>
+          {books.map((book) => {
+            return (<Book 
+              key={book.id}
+              title={book.title}
+              author={book.author}
+            />
+          )})}
+          <hr />
+          
+          {books.map((book) => (<Book key={book.id} title={book.title} author={book.author} />))}
+
           {technologies.map((tech) => (
               <Technology
                 key={tech.id}
