@@ -35,7 +35,14 @@ function App() {
       category: "Database",
       hours: 20
     },
-  ]
+  ];
+
+  const students = [
+    { id: 1, name: "Anna", className: "4P", age: 20, specialization: "C#" },
+    { id: 2, name: "Jan", className: "4P", age: 18, specialization: "C"  },
+    { id: 3, name: "Adam", className: "4P", age: 16, specialization: "C++"  },
+    { id: 4, name: "Józef", className: "4P", age: 14, specialization: "HTML"  }
+  ];
 
   return (
     <>
@@ -44,48 +51,32 @@ function App() {
         <Navigation />
 
         <main>
-          {
-            technologies.map((tech) => (
+          {technologies.map((tech) => (
               <Technology
-                id={tech.id}
+                key={tech.id}
                 name={tech.name}
                 category={tech.category}
                 hours={tech.hours}
               />
-            ))
-          }
+            ))}
+
+          {students.map((student) => {
+            return (
+              <Student
+                key={student.id}  
+                name={student.name}
+                className={student.className}
+                age={student.age}
+                specialization={student.specialization}
+              />
+            );
+          })}
 
           <CourseCard
             name="React Course"
             teacher="Rafał Taraszka"
             hours={2}
             completed={false}
-          />
-
-          <Student />
-          
-          <StudentCard 
-            name="Jan Kowalski" 
-            className="4P" 
-            specialization="technik programista" 
-            age={18}
-            active={true}
-          />
-          
-          <StudentCard 
-            name="Adam Nowak" 
-            className="3P" 
-            specialization="technik programista"
-            age={17}
-            active={false}
-          />
-
-          <StudentCard 
-            name="Józef Kowal" 
-            className="2P" 
-            specialization="technik programista"
-            age={16}
-            active={true}
           />
           
           <InfoBox />

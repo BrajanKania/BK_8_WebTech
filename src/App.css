@@ -15,3 +15,9 @@
   width: 50%;
   margin: 4px auto;
 }
+
+.student{
+  border: dotted 2px green;
+  width: 40%;
+  margin: 4px auto;
+}

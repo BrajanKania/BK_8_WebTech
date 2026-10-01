@@ -1,10 +1,11 @@
-function Student(){
+function Student({id, name, className, age, specialization}){
     return (
-        <div>
-            <h4>Brajan Kania</h4>
-            <p>Klasa: 4P</p>
-            <p>Specjalizacja: C++</p>
-        </div>
+        <section className="student">
+            <p>Imię: {name}</p>
+            <p>Klasa: {className}</p>
+            <p>Wiek: {age}</p>
+            <p>Specializacja: {specialization}</p>
+        </section>
     )
 }
 
