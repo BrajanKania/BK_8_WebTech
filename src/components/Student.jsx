@@ -1,4 +1,4 @@
-function Student({id, name, className, age, specialization}){
+function Student({name, className, age, specialization}){
     return (
         <section className="student">
             <p>Imię: {name}</p>
