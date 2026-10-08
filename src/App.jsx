@@ -15,6 +15,7 @@ import Navigation from "./components/Navigation"
 import StudentCard from "./components/StudentCard"
 import CourseCard from './components/CourseCard'
 import Book from './components/Book'
+import Product from './components/Product'
 
 function App() {
   const technologies = [
@@ -63,6 +64,15 @@ function App() {
     { id: 3, title: "Lalka", author: "Bolesław Prus" }
   ];
 
+  const products = [
+    { id: 1, name: "Laptop", price: 500 },
+    { id: 2, name: "Phone", price: 1000 }
+  ];
+
+  function selectProduct(name){
+    console.log(`Wybrano produkt: ${name}`);
+  }
+
   return (
     <>
       <Header />
@@ -70,6 +80,9 @@ function App() {
         <Navigation />
 
         <main>
+
+          {products.map((product) => {return ( <Product key={product.id} name={product.name} price={product.price} onSelect={selectProduct}/> );})}
+
           {books.map((book) => {
             return (<Book 
               key={book.id}
