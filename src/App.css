@@ -42,3 +42,15 @@
 .technology img{
   width: 40%;
 }
+
+.counter{
+  width: 40%;
+  margin: 4px auto;
+  border: dashed 3px green;
+}
+
+.state{
+  width: 40%;
+  margin: 4px auto;
+  border: dashed 3px red;
+}
