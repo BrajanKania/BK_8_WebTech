@@ -33,3 +33,12 @@
   margin: 4px auto;
   border: blue solid 3px;
 }
+
+.categoryLabel{
+  font-weight: bold;
+  color: blue;
+}
+
+.technology img{
+  width: 40%;
+}
