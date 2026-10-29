@@ -19,6 +19,8 @@ import Product from './components/Product'
 import Counter from './components/Counter'
 import State from './components/State'
 
+import 'bootstrap/dist/css/bootstrap.min.css'
+
 function App() {
 
 
@@ -104,6 +106,29 @@ function App() {
           
           <InfoBox />
         </main>
+
+        <div class="container">
+          <div class="row mb-3">
+            <div class="col-3 bg-light text-left">
+               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus rerum corrupti accusantium omnis repellendus optio autem fuga. Quo, perspiciatis optio in modi alias omnis cum ut enim atque cumque harum provident officia voluptates eligendi veniam molestiae culpa, iusto aut tempora beatae saepe nobis? Laborum fugit esse deserunt corrupti labore voluptates. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Et, eaque.
+            </div>
+            <div class="col-6 text-center">
+               Lorem ipsum dolor sit amet. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed illum quas impedit molestiae ullam laudantium ipsa saepe, sint atque eos asperiores aspernatur quasi magni distinctio doloremque quaerat, laborum vel soluta odit. Labore.
+            </div>
+            <div class="col-3 bg-light fw-bold py-10 text-right">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt modi ex nobis et impedit a dolor illo laboriosam tempore doloribus, nostrum laudantium itaque ipsam error enim dolorum quia quod, dolore odit. Earum.
+            </div>
+          </div>
+
+          <div class="form-check form-switch">
+            <input type="checkbox" id="przypomnienie" class="form-check-input"/>
+            <label for="przypomnienie" class="form-check-label">
+              Przypomnienie o kursie
+            </label>
+          </div>
+
+
+        </div>
 
       <Footer />
     </>
